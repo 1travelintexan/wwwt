@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Caprasimo&family=Lilita+One&display=swap");
+h1 {
+  margin: 0;
+  padding: 0;
+  color: white;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: rgb(47, 45, 45);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  background-color: rgb(255, 213, 6);
+  color: black;
+  border-radius: 0.5rem;
+  padding: 5px;
+  margin-left: 20px;
+  font-size: 1.4rem;
+  font-family: "Caprasimo", cursive;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.movie {
+  width: 10rem;
+  border: 2px solid gray;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 1rem;
+}
+.movie img {
+  height: 150px;
+  object-fit: cover;
+}
+.top-movies-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.search-input {
+  border-radius: 1.5rem;
+  border: none;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.found-movie-container {
+  display: flex;
+  flex-wrap: wrap;
 }
