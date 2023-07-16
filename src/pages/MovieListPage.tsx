@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface movie {
   title: string;
   image: string;
@@ -15,10 +17,12 @@ export const MovieList: React.FC<props> = ({ movies }) => {
         {movies &&
           movies.map((movie: any) => {
             return (
-              <div className="movie" key={movie.id}>
-                <img src={movie.image} alt="movie" />
-                <h6>{movie.title}</h6>
-              </div>
+              <Link key={movie.id} to={`/movie-detail/${movie.title}`}>
+                <div className="movie">
+                  <img src={movie.image} alt="movie" />
+                  <h6>{movie.title}</h6>
+                </div>
+              </Link>
             );
           })}
       </div>

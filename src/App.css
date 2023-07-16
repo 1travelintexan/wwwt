@@ -52,8 +52,48 @@ h1 {
   padding: 10px;
   margin: 10px;
 }
+.search-movie-card {
+  width: 20rem;
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 1rem;
+}
+.search-movie-img {
+  width: 90%;
+}
 
 .found-movie-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.movie-detail-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.movie-detail-card h4 {
+  margin: 10px 0;
+  color: rgb(89, 212, 253);
+}
+.movie-detail-card h3 {
+  margin: 0;
+}
+
+.movie-detail-card {
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 1rem;
+  width: 50%;
 }
